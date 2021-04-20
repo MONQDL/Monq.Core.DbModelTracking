@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monq.Core.DbModelTracking", "src\Monq.Core.DbModelTracking\Monq.Core.DbModelTracking.csproj", "{0B1C7CF6-0A26-419C-B515-ABAFA4E918A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1CFD72DA-A7EB-495C-A892-9BB9F691826B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{836CCC17-B227-4767-BF87-856757A9BD49}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.github\workflows\netcorelibrary.yml = .github\workflows\netcorelibrary.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monq.Core.DbModelTracking.Tests", "src\Monq.Core.DbModelTracking.Tests\Monq.Core.DbModelTracking.Tests.csproj", "{37B4AD87-A806-42A1-A44C-C777398DA0CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B1C7CF6-0A26-419C-B515-ABAFA4E918A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B1C7CF6-0A26-419C-B515-ABAFA4E918A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B1C7CF6-0A26-419C-B515-ABAFA4E918A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B1C7CF6-0A26-419C-B515-ABAFA4E918A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B4AD87-A806-42A1-A44C-C777398DA0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B4AD87-A806-42A1-A44C-C777398DA0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B4AD87-A806-42A1-A44C-C777398DA0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B4AD87-A806-42A1-A44C-C777398DA0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0B1C7CF6-0A26-419C-B515-ABAFA4E918A8} = {1CFD72DA-A7EB-495C-A892-9BB9F691826B}
+		{37B4AD87-A806-42A1-A44C-C777398DA0CE} = {1CFD72DA-A7EB-495C-A892-9BB9F691826B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {039920F5-C8DD-4CAD-8648-1B228F4175A6}
+	EndGlobalSection
+EndGlobal
