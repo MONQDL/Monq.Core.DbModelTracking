@@ -66,7 +66,7 @@ namespace Monq.Core.DbModelTracking.Extensions
             if (trackedEntity.EntityInfo is null)
                 throw new ArgumentNullException(nameof(trackedEntity.EntityInfo), $"{nameof(trackedEntity.EntityInfo)} is null.");
 
-            trackedEntity.EntityInfo.UpdatedAt = DateTimeOffset.Now;
+            trackedEntity.EntityInfo.UpdatedAt = DateTimeOffset.UtcNow;
             trackedEntity.EntityInfo.UpdatedBy = userId;
             trackedEntity.EntityInfo.UpdatedByName = userId != SystemUserId ? user.Identity?.Name : SystemUserName;
         }
@@ -87,7 +87,7 @@ namespace Monq.Core.DbModelTracking.Extensions
                 if (trackedEntity.EntityInfo is null)
                     throw new ArgumentNullException(nameof(trackedEntity.EntityInfo), $"{nameof(trackedEntity.EntityInfo)} is null.");
 
-                trackedEntity.EntityInfo.UpdatedAt = DateTimeOffset.Now;
+                trackedEntity.EntityInfo.UpdatedAt = DateTimeOffset.UtcNow;
                 trackedEntity.EntityInfo.UpdatedBy = userId;
                 trackedEntity.EntityInfo.UpdatedByName = userId != SystemUserId ? user.Identity?.Name : SystemUserName;
             }
