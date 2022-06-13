@@ -57,9 +57,9 @@ namespace Monq.Core.DbModelTracking.Tests
             Assert.NotNull(trackedEntityViewModel);
 
             Assert.Equal(trackedEntity.CreatedBy, trackedEntityViewModel.CreatedBy);
-            Assert.Equal($"{trackedEntity.CreatedByName} (удален)", trackedEntityViewModel.CreatedByName);
+            Assert.Equal($"{trackedEntity.CreatedByName} (deleted)", trackedEntityViewModel.CreatedByName);
             Assert.Equal(trackedEntity.UpdatedBy, trackedEntityViewModel.UpdatedBy);
-            Assert.Equal($"{trackedEntity.UpdatedByName} (удален)", trackedEntityViewModel.UpdatedByName);
+            Assert.Equal($"{trackedEntity.UpdatedByName} (deleted)", trackedEntityViewModel.UpdatedByName);
             Assert.Equal(trackedEntity.UpdatedAt.Value, trackedEntityViewModel.UpdatedAt);
         }
 
@@ -107,9 +107,9 @@ namespace Monq.Core.DbModelTracking.Tests
             Assert.NotNull(trackedEntityViewModel);
 
             Assert.Equal(trackedEntity.CreatedBy, trackedEntityViewModel.CreatedBy);
-            Assert.Equal($"{trackedEntity.CreatedByName} (удален)", trackedEntityViewModel.CreatedByName);
+            Assert.Equal($"{trackedEntity.CreatedByName} (deleted)", trackedEntityViewModel.CreatedByName);
             Assert.Equal(trackedEntity.UpdatedBy, trackedEntityViewModel.UpdatedBy);
-            Assert.Equal($"{trackedEntity.UpdatedByName} (удален)", trackedEntityViewModel.UpdatedByName);
+            Assert.Equal($"{trackedEntity.UpdatedByName} (deleted)", trackedEntityViewModel.UpdatedByName);
             Assert.Equal(trackedEntity.UpdatedAt.Value.ToUnixTimeSeconds(), trackedEntityViewModel.UpdatedAt);
         }
 
