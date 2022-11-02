@@ -14,7 +14,7 @@
 ## Установка
 
 ```powershell
-Install-Package Monq.Core.DbModelTracking -Source http://nuget.monq.ru/nuget/Default
+Install-Package Monq.Core.DbModelTracking
 ```
 
 ## Использование
