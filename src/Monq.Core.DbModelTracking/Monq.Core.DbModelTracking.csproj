@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Version>3.0.3</Version>
+    <Version>3.0.4</Version>
     <VersionSuffix>$(VersionSuffix)</VersionSuffix>
     <Version Condition=" '$(VersionSuffix)' != '' ">$(Version)-$(VersionSuffix)</Version>
     <IsPackable>true</IsPackable>
-    <TargetFrameworks>netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <Authors>Evgeniy Cherniaev, Dmitry Fokin, Evgeniy Zyatyna</Authors>
     <Company>MONQ Digital lab</Company>
     <Title>Monq.Core.DbModelTracking</Title>
@@ -24,6 +24,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!--Do not upgrate Automapper due to compatibility reasons-->
     <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="Monq.Core.DbModelTracking.Models" Version="2.3.0" />
   </ItemGroup>
