@@ -10,7 +10,7 @@ namespace Monq.Core.DbModelTracking.Models
         /// <summary>
         /// Дата создания сущности.
         /// </summary>
-        public DateTimeOffset CreatedAt { get; protected set; } = DateTimeOffset.UtcNow;
+        public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
 
         /// <summary>
         /// Id пользователя, который создал сущность.
