@@ -1,4 +1,4 @@
-﻿using Monq.Core.DbModelTracking.Models;
+using Monq.Core.DbModelTracking.Models;
 
 namespace Monq.Core.DbModelTracking
 {
@@ -10,6 +10,6 @@ namespace Monq.Core.DbModelTracking
         /// <summary>
         /// Мета-информация по сущности.
         /// </summary>
-        TrackedEntity? EntityInfo { get; set; }
+        TrackedEntity EntityInfo { get; set; }
     }
 }

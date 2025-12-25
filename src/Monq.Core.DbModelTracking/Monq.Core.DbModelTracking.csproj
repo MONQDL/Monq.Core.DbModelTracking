@@ -4,8 +4,9 @@
     <Version>3.0.5</Version>
     <VersionSuffix>$(VersionSuffix)</VersionSuffix>
     <Version Condition=" '$(VersionSuffix)' != '' ">$(Version)-$(VersionSuffix)</Version>
-    <IsPackable>true</IsPackable>
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
+    <IsPackable>true</IsPackable>
+    <IsTrimmable>true</IsTrimmable>
     <Authors>Evgeniy Cherniaev, Dmitry Fokin, Evgeniy Zyatyna</Authors>
     <Company>MONQ Digital lab</Company>
     <Title>Monq.Core.DbModelTracking</Title>
@@ -24,8 +25,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!--Do not upgrate Automapper due to compatibility reasons-->
-    <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="Monq.Core.DbModelTracking.Models" Version="2.3.0" />
   </ItemGroup>
 

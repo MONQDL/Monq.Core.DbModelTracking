@@ -1,4 +1,4 @@
-﻿using Monq.Core.DbModelTracking.Models;
+using Monq.Core.DbModelTracking.Models;
 using System;
 using System.Collections.Generic;
 using System.Security.Claims;
@@ -10,6 +10,9 @@ namespace Monq.Core.DbModelTracking.Extensions
     /// </summary>
     public static class EntityInfoExtension
     {
+        /// <summary>
+        /// Название системного пользователя в БД.
+        /// </summary>
         public const string SystemUserName = "SystemUser";
         const long SystemUserId = -1;
 
