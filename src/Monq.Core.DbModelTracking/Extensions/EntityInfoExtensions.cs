@@ -8,7 +8,7 @@ namespace Monq.Core.DbModelTracking.Extensions
     /// <summary>
     /// Расширение для работы с мета-информацией по сущностям
     /// </summary>
-    public static class EntityInfoExtension
+    public static class EntityInfoExtensions
     {
         /// <summary>
         /// Название системного пользователя в БД.
